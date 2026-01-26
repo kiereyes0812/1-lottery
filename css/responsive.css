@@ -1,0 +1,212 @@
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    .nav__data .nav__toggle {
+        display: block;
+    }
+
+    div.nav__menu {
+        position: absolute;
+        padding-top: 13px;
+        top: 0rem;
+        left: 0;
+        width: 85%;
+        height: 80vh;
+        background: linear-gradient(90deg, #f95959 0%, #ff9a8e 100%);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav__menu ul.menu-list {
+        display: block;
+    }
+
+    .nav__menu ul.menu-list li.menu-link {
+        padding: 13px 0px;
+    }
+
+    .nav__menu ul.menu-list li.menu-link a {
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .nav__menu ul.menu-list li.menu-link>ul.sunmenu {
+        position: relative;
+        margin-left: 0 !important;
+        margin-top: 0;
+        box-shadow: none;
+        background: #2d0f54;
+        display: none;
+    }
+
+    .nav__menu ul.menu-list li.menu-link>ul>li>a {
+        color: #fff;
+        padding: 8px 20px;
+    }
+
+    .tips-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+
+    }
+
+    .footer-section ul {
+
+        display: block !important;
+
+    }
+
+    .button-group .bttn {
+        position: relative;
+        padding: 14px 29px;
+    }
+
+    .gift-code-box {
+
+        font-size: 16px !important;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .nav__data .nav__toggle {
+        display: block;
+    }
+
+    div.nav__menu {
+        position: absolute;
+        padding-top: 13px;
+        top: 0rem;
+        left: 0;
+        width: 85%;
+        height: 90vh;
+        background: linear-gradient(90deg, #f95959 0%, #ff9a8e 100%);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        outline: 1px solid #fff;
+        outline-offset: 3px;
+    }
+
+    .nav__menu ul.menu-list {
+        display: block;
+    }
+
+    .nav__menu ul.menu-list li.menu-link {
+        padding: 13px 0px;
+    }
+
+    .nav__menu ul.menu-list li.menu-link a {
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .nav__menu ul.menu-list li.menu-link>ul.sunmenu {
+        position: relative;
+        margin-left: 0 !important;
+        margin-top: 0;
+        box-shadow: none;
+        background: #2d0f54;
+        display: none;
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+    }
+
+    .nav__menu ul.menu-list li.menu-link>ul>li>a {
+        color: #fff;
+        padding: 8px 20px;
+    }
+
+    .tips-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+
+    }
+
+    .footer-section ul {
+
+        display: block !important;
+
+    }
+
+    .button-group .bttn {
+        position: relative;
+        padding: 7px 15px;
+    }
+
+    .gift-code-box {
+
+        font-size: 16px !important;
+
+    }
+
+    .gift-code-box {
+        font-size: 14px !important;
+    }
+
+    .lottery-bg-clr .img-box img {
+        max-width: 100%;
+    }
+
+    .nav__data .button-group {
+        display: flex;
+        gap: 9px;
+
+    }
+
+    .top-section .lottery-bg-clrs {
+
+        padding: 20px !important;
+    }
+
+    .table-section .spec-table {
+        width: 100%;
+        min-width: 100%;
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (min-width: 853px) and (max-width: 1290px) {
+    .button-group .bttn {
+        position: relative;
+        padding: 7px 15px;
+    }
+
+    .gift-code-box {
+
+        font-size: 16px !important;
+
+    }
+
+    .gift-code-box {
+        font-size: 14px !important;
+    }
+
+    .lottery-bg-clr .img-box img {
+        max-width: 100%;
+    }
+
+    .nav__data .button-group {
+        display: flex;
+        gap: 9px;
+
+    }
+
+    .button-group {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}

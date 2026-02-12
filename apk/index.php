@@ -1,181 +1,122 @@
+<?php
+// Base URL setup (works on localhost subfolder and production root)
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$isLocal = ($host === 'localhost' || $host === '127.0.0.1');
+$basePath = $isLocal ? '/1lotteryyio' : '';
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$BASE_URL = $protocol . '://' . $host . $basePath;
+?>
 <!doctype html>
-<html lang="en-IN">
+<html lang="en-US">
 
 <head>
-    <!-- Essential Meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>1 Lottery APK Download</title>
-    <meta name="description"
-        content="Get the official 1 Lottery APK Download for Android. Play online lottery games securely, with fast & secure deposits and instant withdrawals.">
-    
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href=" https://1lotteryy.io/apk/" />
-    <meta property="og:title" content="1 Lottery APK Download">
-    <meta property="og:description"
-        content="Get the official 1 Lottery APK Download for Android. Play online lottery games securely, with fast & secure deposits and instant withdrawals.">
-    <meta property="og:url" content=" https://1lotteryy.io/apk/">
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="1 Lottery Login">
-    <meta property="og:image" content="https://1lotteryy.io/assets/image/Download 1 Lottery App.webp" />
-    <meta property="og:image:alt" content="Download 1 Lottery App" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="1 Lottery APK Download">
-    <meta name="twitter:description"
-        content="Get the official 1 Lottery APK Download for Android. Play online lottery games securely, with fast & secure deposits and instant withdrawals.">
-    <meta name="twitter:image" content="https://1lotteryy.io/assets/image/Download 1 Lottery App.webp" />
-    <meta name="twitter:image:alt" content="Download 1 Lottery App" />
-    <link rel="icon" href="assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="assets/image/1lottery-favicon.webp" />
-    <!-- Stylesheets -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <title>1 Lottery App Download</title>
+    <meta name="description" content="Get the official 1 Lottery APP Download for Android. Play online lottery games securely, with fast &amp; secure deposits and instant withdrawals." />
+   
+    <link rel="canonical" href="https://1lotteryy.io/apk/" />
+    <meta name="author" content="1Lottery Team" />
+    <meta name="publisher" content="1 Lottery Game" />
+    <link rel="alternate" hreflang="en-US" href="https://1lotteryy.io/apk/" />
+    <meta property="og:title" content="1 Lottery App Download" />
+    <meta property="og:description" content="Get the official 1 Lottery APP Download for Android. Play online lottery games securely, with fast &amp; secure deposits and instant withdrawals." />
+    <meta property="og:url" content="https://1lotteryy.io/apk/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="1 Lottery Game" />
+    <meta property="og:image" content="https://1lotteryy.io/assets/image/Download%201%20Lottery%20App.webp" />
+    <meta property="og:image:alt" content="1 Lottery App Download" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="1 Lottery App Download" />
+    <meta name="twitter:description" content="Get the official 1 Lottery APP Download for Android. Play online lottery games securely, with fast &amp; secure deposits and instant withdrawals." />
+    <meta name="twitter:image" content="https://1lotteryy.io/assets/image/Download%201%20Lottery%20App.webp" />
+    <meta name="twitter:image:alt" content="1 Lottery App Download" />
+    <link rel="icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" />
+    <meta name="theme-colour" content="#0d6efd" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Sitemap & Feeds -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://1lotteryy.io/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="1Lottery RSS Feed" href="https://1lotteryy.io/feed.xml" />
+    <!-- CSS & Libraries -->
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
-    <!-- JSON-LD Structured Data for SEO -->
-   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
     {
-      "@type": "WebPage",
-      "@id": "https://1lotteryy.io/apk/#webpage",
-      "url": "https://1lotteryy.io/apk/",
-      "name": "1 Lottery App Download",
-      "description": "Get the official 1 Lottery APK Download for Android. Play online lottery games securely, with fast & secure deposits and instant withdrawals.",
-      "inLanguage": "en-IN"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://1lotteryy.io/apk/#article",
-      "headline": "1 Lottery App Download",
-      "description": "Get the official 1 Lottery APK Download for Android. Play online lottery games securely, with fast & secure deposits and instant withdrawals.",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://1lotteryy.io/assets/image/Download 1 Lottery App.webp",
-        "width": 1200,
-        "height": 628
-      },
-      "mainEntityOfPage": {
-        "@id": "https://1lotteryy.io/apk/#webpage"
-      },
-      "author": {
-        "@type": "Organization",
-        "@id": "https://1lotteryy.io/#organization",
-        "name": "1 Lottery"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "@id": "https://1lotteryy.io/#organization",
-        "name": "1 Lottery"
-      },
-      "datePublished": "2025-01-01",
-      "dateModified": "2025-09-22"
-    },
-   {
-      "@type": "MobileApplication",
-      "@id": "https://1lotteryy.io/#mobileapp",
-      "name": "1 Lottery App",
-      "operatingSystem": "Android",
-      "applicationCategory": "GameApplication",
-      "downloadUrl": "https://1lotteryy.io/apk/",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "ratingCount": "1532"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://1lotteryy.io/apk/#howto",
-      "name": "How to Download 1 Lottery APK",
-      "description": "Step-by-step guide to download 1 Lottery App.",
-      "totalTime": "PT3M",
-      "step": [
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@type": "HowToStep",
-          "position": 1,
-          "name": "Visit 1 Lottery Game",
+          "@type": "Organization",
+          "@id": "https://1lotteryy.io/#organization",
+          "name": "1 Lottery Game",
+          "url": "https://1lotteryy.io/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://1lotteryy.io/assets/image/1lottery-logo.webp"
+          },
+          "description": "1 Lottery is an online gaming platform offering color prediction style games and rewards."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://1lotteryy.io/#website",
+          "url": "https://1lotteryy.io/",
+          "name": "1 Lottery Game",
+          "publisher": {
+            "@id": "https://1lotteryy.io/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://1lotteryy.io/apk/#webpage",
+          "url": "https://1lotteryy.io/apk/",
+          "name": "1 Lottery APK Download",
+          "description": "Get the official 1 Lottery APK Download for Android. Play online lottery games securely, with fast & secure deposits and instant withdrawals.",
+          "isPartOf": {
+            "@id": "https://1lotteryy.io/#website"
+          },
+          "publisher": {
+            "@id": "https://1lotteryy.io/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://1lotteryy.io/apk/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://1lotteryy.io/apk/#breadcrumb",
           "itemListElement": [
             {
-              "@type": "HowToDirection",
-              "text": "Open the 1 Lottery Game website."
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "name": "Login to Your Account",
-          "itemListElement": [
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://1lotteryy.io/"
+            },
             {
-              "@type": "HowToDirection",
-              "text": "Use your registered account credentials to login."
+              "@type": "ListItem",
+              "position": 2,
+              "name": "1 Lottery APK Download",
+              "item": "https://1lotteryy.io/apk/"
             }
           ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 3,
-          "name": "Download App Button",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "Click on the download app button."
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 4,
-          "name": "Download APK file",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "The 1 Lottery APK file will start downloading on your device."
-            }
-          ]
-        },
-     "tool": [
-        {
-          "@type": "HowToTool",
-          "name": "1 Lottery website or mobile app"
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://1lotteryy.io/apk/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://1lotteryy.io/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "APK",
-          "item": "https://1lotteryy.io/apk/"
         }
       ]
     }
-  ]
-}
-</script>
+    </script>
 
 </head>
 
@@ -186,9 +127,13 @@
         <div class="container">
 
             <div class="h1head">
-                <h1>1 Lottery App Download</h1>
+                
+          <div class="heading-surface h1-surface">
+            <h1>1 Lottery App Download</h1>
+          </div>
+        
             </div>
-            <div class="section inner-section white">
+<div class="section inner-section white">
 
                 <p>Looking for simple ways to play fun games on your phone and win real rewards at the same time? The 1
                     Lottery app is just right for you. It requires less storage space, is very easy to download, and
@@ -200,6 +145,20 @@
                     you many ways to enjoy endlessly and earn rewards. Here, we’ll help you download, install, and use
                     the app safely.</P>
             </div>
+
+        <nav class="content-block toc-card" data-toc-static aria-label="Table of contents">
+          <button class="toc-toggle" type="button" aria-expanded="false">
+            <span class="toc-arrow" aria-hidden="true">▾</span>
+            <span class="toc-title">Table of Contents</span>
+          </button>
+
+          <div class="toc-panel" hidden>
+            <ol class="toc-list" data-toc></ol>
+          </div>
+        </nav>
+
+            
+
 
             <div class="section inner-section">
                 <div class="h2head">
@@ -234,12 +193,12 @@
                     </li>
                     <li>
                         <div class="step-number">5</div>
-                        <div class="step-text">The customer support is available 24/7 to help whenever you face a
+                        <div class="step-text">The <a href="https://1lotteryy.io/1-lottery-customer-support/">customer support</a> is available 24/7 to help whenever you face a
                             problem related to the platform.</div>
                     </li>
 
                 </ul>
-                <p class="white">Once you download the 1 Lottery app, you can quickly register or log in and start
+                <p class="white">Once you download the <a href="https://1lotteryy.io">1 Lottery</a> app, you can quickly register or log in and start
                     enjoying the games.
                     The process is smooth, so you don’t waste time before the fun begins.</p>
             </div>
@@ -276,7 +235,7 @@
                         </tr>
                         <tr>
                             <th>Category</th>
-                            <td>Color Prediction</td>
+                            <td>Colour Prediction</td>
                         </tr>
                         <tr>
                             <th>Customer Service</th>
@@ -318,12 +277,12 @@
                     you need to
                     fulfil:</p>
                 <ul>
-                    <li><strong>Android version: </strong> 5.0 or higher</li>
-                    <li><strong>Storage space: </strong> At least 100 MB free (the app itself is just 47.9 MB)</li>
-                    <li><strong>RAM:</strong> Minimum 2 GB (for smooth gaming)</li>
-                    <li><strong>Internet: </strong> A stable 3G/4G or Wi-Fi connection</li>
-                    <li><strong>Screen type: </strong> Works on both touch and multi-touch screens</li>
-                    <li><strong>Processor: </strong> A Basic quad-core or above is enough </li>
+                    <li><strong>Android version: </strong> 5.0 or higher.</li>
+                    <li><strong>Storage space: </strong> At least 100 MB free (the app itself is just 47.9 MB).</li>
+                    <li><strong>RAM:</strong> Minimum 2 GB (for smooth gaming).</li>
+                    <li><strong>Internet: </strong> A stable 3G/4G/5G or Wi-Fi connection.</li>
+                    <li><strong>Screen type: </strong> Works on both touch and multi-touch screens.</li>
+                    <li><strong>Processor: </strong> A Basic quad-core or above is enough.</li>
                 </ul>
             </div>
 
@@ -512,7 +471,7 @@
                     <li>It protects your account and wallet from risks with better security.</li>
                     <li>You are the first to benefit from new games and bonuses.</li>
                     <li>The game lags less than before with quicker loading times and better visuals.</li>
-                    <li>Now, follow these steps to download the latest APK version</li>
+                    <li>Now, follow these steps to download the latest APK version.</li>
                 </ul>
 
                 <div class="steps">
@@ -601,7 +560,7 @@
                     </li>
                     <li>
                         <div class="step-number">2</div>
-                        <div class="step-text">All your deposits and withdrawals are protected with trusted and
+                        <div class="step-text">All your <a href="https://1lotteryy.io/1-lottery-deposit/">deposits</a> and withdrawals are protected with trusted and
                             encrypted methods like UPI, Bank Card, USDT, and many more methods.</div>
                     </li>
                     <li>
@@ -682,7 +641,6 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/custom.js"></script>
     <?php include('../footer.php') ?>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

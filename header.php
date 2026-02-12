@@ -18,16 +18,23 @@ if (!isset($BASE_URL)) {
     $BASE_URL = $host ? ($scheme . '://' . $host . $basePath) : $basePath;
 }
 ?>
+<?php
+$reqUri = $_SERVER['REQUEST_URI'] ?? '';
+$isApkPage = (strpos($reqUri, '/apk') !== false);
+$IMG_ALT = $isApkPage ? '1 Lottery App Download' : '1 Lottery Login';
+?>
+
+
 
 <header id="myheader" class="myheader">
     <div class="container">
         <div class="row">
             <div class="nav__data">
-                <div class="main-logo"><a href="<?php echo $BASE_URL; ?>/"><img src="<?php echo $BASE_URL; ?>/assets/image/1lottery-logo.webp" alt="1 Lottery game logo"></a>
+                <div class="main-logo"><a href="<?php echo $BASE_URL; ?>/"><img src="<?php echo $BASE_URL; ?>/assets/image/1lottery-logo.webp" alt="<?php echo $IMG_ALT; ?>"></a>
                 </div>
                 <div class="nav__menu" id="nav__menu">
                     <ul class="menu-list">
-                        <li class="menu-link actives"><a href="<?php echo $BASE_URL; ?>/">Home</a></li>
+                        <li class="menu-link"><a href="<?php echo $BASE_URL; ?>/">Home</a></li>
                         <li class="menu-link"><a href="<?php echo $BASE_URL; ?>/responsible-gaming/">Responsible Gaming</a></li>
                         <li class="menu-link"><a href="<?php echo $BASE_URL; ?>/apk/">Download App</a></li>
 

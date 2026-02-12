@@ -7,337 +7,516 @@ $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https'
 $BASE_URL = $protocol . '://' . $host . $basePath;
 ?>
 <!doctype html>
-<html lang="en-IN">
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <title>1 Lottery Customer Support</title>
+    <meta name="description" content="Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know." />
+   
+    <link rel="canonical" href="https://1lotteryy.io/1-lottery-customer-support/" />
+    <meta name="author" content="1Lottery Team" />
+    <meta name="publisher" content="1 Lottery Game" />
+    <link rel="alternate" hreflang="en-US" href="https://1lotteryy.io/1-lottery-customer-support/" />
+    <meta property="og:title" content="1 Lottery Customer Support" />
+    <meta property="og:description" content="Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know." />
+    <meta property="og:url" content="https://1lotteryy.io/1-lottery-customer-support/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="1 Lottery Game" />
+    <meta property="og:image" content="https://1lotteryy.io/assets/image/customer-support.webp" />
+    <meta property="og:image:alt" content="1 Lottery Login" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="1 Lottery Customer Support" />
+    <meta name="twitter:description" content="Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know." />
+    <meta name="twitter:image" content="https://1lotteryy.io/assets/image/customer-support.webp" />
+    <meta name="twitter:image:alt" content="1 Lottery Login" />
+    <link rel="icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" />
+    <meta name="theme-colour" content="#0d6efd" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Sitemap & Feeds -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://1lotteryy.io/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="1Lottery RSS Feed" href="https://1lotteryy.io/feed.xml" />
+    <!-- CSS & Libraries -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
-  <title>1 Lottery Customer Support</title>
-  <meta name="description" content="Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know.">
-  <meta name="robots" content="index, follow">
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "@id": "https://1lotteryy.io/1-lottery-customer-support/#faq",
+          "url": "https://1lotteryy.io/1-lottery-customer-support/",
+          "mainEntity": [{
+              "@type": "Question",
+              "name": "Is the customer service available 24/7?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is available 24/7 to resolve your queries and maintain the smooth gaming system."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can the customer care department assist me with my question about the teacher program?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, they can help you with a query on the application for the 1 Lottery teacher program."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I contact the support department on the 1 Lottery platform?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can use the in-app 1 Lottery customer care number Telegram portal to contact them."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I contact support before logging in?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, you can! You can open our official website and launch the Customer Service portal available on the Login screen. From there, you can contact the support team."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What information do I need when contacting support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Information such as your UID, registered phone number, transaction details and description of the issues you are facing needs to be ready with you before contacting them."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I report technical issues to the 1 Lottery customer service department?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Certainly! You can get issues—app crashes, installation and account-related issues—resolved with the help of the customer service department."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I get help with forgotten passwords from customer service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, they will guide you on how to reset your password; however, it is a self-explanatory process, meaning you can resolve it by visiting the Login page and clicking the Forgot Password button."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if my withdrawal is delayed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You should keep your transaction ID and then contact customer care."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my personal data safe with customer support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Our support team uses a highly encrypted infrastructure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I do if my account is blocked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You may submit a request to the 1 Lottery customer support team with your registration information (like registered phone number) to have your account reviewed and unblocked."
+              }
+            }
+          ]
+        }
+      </script>
 
-  <link rel="canonical" href="https://1lotteryy.io/1-lottery-customer-support/">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [{
+              "@type": "Organization",
+              "@id": "https://1lotteryy.io/#organization",
+              "name": "1 Lottery Game",
+              "url": "https://1lotteryy.io/",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://1lotteryy.io/assets/image/1lottery-logo.webp"
+              },
+              "description": "1 Lottery is an online gaming platform offering color prediction style games and rewards."
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://1lotteryy.io/#website",
+              "url": "https://1lotteryy.io/",
+              "name": "1 Lottery Game",
+              "publisher": {
+                "@id": "https://1lotteryy.io/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://1lotteryy.io/1-lottery-customer-support/#webpage",
+              "url": "https://1lotteryy.io/1-lottery-customer-support/",
+              "name": "1 Lottery Customer Support",
+              "description": "Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know.",
+              "isPartOf": {
+                "@id": "https://1lotteryy.io/#website"
+              },
+              "publisher": {
+                "@id": "https://1lotteryy.io/#organization"
+              },
+              "breadcrumb": {
+                "@id": "https://1lotteryy.io/1-lottery-customer-support/#breadcrumb"
+              },
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://1lotteryy.io/1-lottery-customer-support/#breadcrumb",
+              "itemListElement": [{
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://1lotteryy.io/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "1 Lottery Customer Support",
+                  "item": "https://1lotteryy.io/1-lottery-customer-support/"
+                }
+              ]
+            },
+            {
+              "@type": "BlogPosting",
+              "@id": "https://1lotteryy.io/1-lottery-customer-support/#blogposting",
+              "url": "https://1lotteryy.io/1-lottery-customer-support/",
+              "headline": "1 Lottery Customer Support",
+              "description": "Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know.",
+              "mainEntityOfPage": "https://1lotteryy.io/1-lottery-customer-support/#webpage",
+              "author": {
+                "@id": "https://1lotteryy.io/#organization"
+              },
+              "publisher": {
+                "@id": "https://1lotteryy.io/#organization"
+              },
+              "isPartOf": {
+                "@id": "https://1lotteryy.io/#website"
+              },
+              "inLanguage": "en-US",
+              "image": [
+                "https://1lotteryy.io/assets/image/customer-support.webp"
+              ]
+            }
+          ]
+        }
+      </script>
 
-  <meta property="og:title" content="1 Lottery Customer Support">
-  <meta property="og:description" content="Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know.">
-  <meta property="og:url" content="https://1lotteryy.io/1-lottery-customer-support/">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="1 Lottery">
-  <meta property="og:image" content="https://1lotteryy.io/assets/image/customer-support.webp">
-  <meta property="og:image:alt" content="1 Lottery Customer Support">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="1 Lottery Customer Support">
-  <meta name="twitter:description" content="Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know.">
-  <meta name="twitter:image" content="https://1lotteryy.io/assets/image/customer-support.webp">
-  <meta name="twitter:image:alt" content="1 Lottery Customer Support">
-
-  <link rel="icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon">
-  <link rel="apple-touch-icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp">
-
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-  <style>
-    .article-image { max-width: 100%; height: auto; border-radius: 10px; }
-    .figure-wrap { margin: 14px 0; }
-    .figure-caption { font-size: 14px; opacity: 0.85; margin-top: 6px; }
-
-    /* Force page content left aligned */
-    .h1head { text-align: left !important; }
-    .about-section .inner-section { text-align: left !important; }
-    .about-section .inner-section h2,
-    .about-section .inner-section h3,
-    .about-section .inner-section p,
-    .about-section .inner-section li { text-align: left !important; }
-
-    /* FAQ dropdown overrides to fix white text + right-aligned question */
-    .faq-section .dg-box { text-align: left !important; }
-    .faq-section .h2heading { text-align: left !important; }
-
-    .faq-section .faq-item {
-      cursor: pointer;
-      border: 1px solid rgba(0,0,0,0.12);
-      border-radius: 10px;
-      padding: 14px;
-      margin-bottom: 12px;
-      background: #fff;
-    }
-
-    .faq-section .faq-question {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start !important;
-      gap: 10px;
-      width: 100%;
-      text-align: left !important;
-    }
-
-    .faq-section .faq-question h3 {
-      margin: 0;
-      font-size: 18px;
-      color: #111 !important;
-      text-align: left !important;
-    }
-
-    .faq-section .faq-answer {
-      display: none;
-      padding-top: 10px;
-      text-align: left !important;
-    }
-
-    .faq-section .faq-answer p {
-      margin: 0;
-      color: #111 !important;
-      text-align: left !important;
-    }
-
-    .faq-section .faq-item.active .faq-answer { display: block; }
-
-    .faq-section .arrow {
-      width: 10px;
-      height: 10px;
-      border-right: 2px solid rgba(0,0,0,0.6);
-      border-bottom: 2px solid rgba(0,0,0,0.6);
-      transform: rotate(-45deg);
-      transition: transform 0.2s ease;
-      flex: 0 0 auto;
-    }
-
-    .faq-section .faq-item.active .arrow { transform: rotate(45deg); }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://1lotteryy.io/1-lottery-customer-support/#webpage",
-        "url": "https://1lotteryy.io/1-lottery-customer-support/",
-        "name": "1 Lottery Customer Support",
-        "description": "Learn how to contact the 1 Lottery customer service and what issues to resolve. This customer support guide provides you with everything you need to know.",
-        "isPartOf": { "@id": "https://1lotteryy.io/#website" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://1lotteryy.io/1-lottery-customer-support/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://1lotteryy.io/" },
-          { "@type": "ListItem", "position": 2, "name": "1 Lottery Customer Support", "item": "https://1lotteryy.io/1-lottery-customer-support/" }
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
 
 <body>
   <?php include('../header.php'); ?>
 
   <section class="about-section">
-    <div class="container">
-      <div class="h1head">
-        <h1>1 Lottery Customer Support</h1>
-      </div>
-
-      <div class="section inner-section">
-        <div class="figure-wrap">
-          <img class="article-image" src="<?php echo $BASE_URL; ?>/assets/image/customer-support.webp" alt="1 Lottery Customer Support featured image">
-          <div class="figure-caption">Guide to contacting 1 Lottery customer support inside the app.</div>
+    <div class="container page-wrap">
+      <div class="content-card">
+        <div class="h1head">
+          <div class="heading-surface h1-surface">
+            <h1>1 Lottery Customer Support</h1>
+          </div>
         </div>
+<div class="section inner-section">
+          <div class="content-block">
+            <p>The 1 Lottery customer support is your dedicated helpdesk, available 24/7, to ensure your consistent
+              satisfaction. Whether you are facing issues related to your account, login troubles, transaction issues,
+              verification, gift redemption, colour prediction, gaming issues and many more, with our support team’s
+              assistance, you can start your gaming journey smoothly. In this post, you will learn how to contact the
+              support team before logging in to the app, after logging in, and other related topics.</p>
+          </div>
 
-        <p>
-          The 1 Lottery customer support team is available 24/7 to help with account, login, verification,
-          wallet, or app-related issues. If you are searching for 1 Lottery customer service because something is not working,
-          this page shows the easiest ways to contact support before login and after login.
-        </p>
-        <p>
-          It also explains what to keep ready so you can get a faster solution through the official helpdesk.
-        </p>
-      </div>
+        <nav class="content-block toc-card" data-toc-static aria-label="Table of contents">
+          <button class="toc-toggle" type="button" aria-expanded="false">
+            <span class="toc-arrow" aria-hidden="true">▾</span>
+            <span class="toc-title">Table of Contents</span>
+          </button>
 
-      <div class="section inner-section">
-        <h2>Why do you need customer support?</h2>
-        <p>
-          Customer support helps keep your experience smooth and secure. When you contact the helpdesk, the team can guide you step-by-step,
-          check your issue, and share the correct solution based on your situation.
-        </p>
+          <div class="toc-panel" hidden>
+            <ol class="toc-list" data-toc></ol>
+          </div>
+        </nav>
 
-        <ul>
-          <li><b>Technical help:</b> App not opening, crashing, or not updating properly.</li>
-          <li><b>Account safety:</b> Guidance if you feel your account is at risk.</li>
-          <li><b>Wallet and transaction help:</b> Deposit errors, pending status, or <a href="<?php echo $BASE_URL; ?>/1-lottery-withdraw/">withdrawal</a> delays.</li>
-          <li><b>Feature guidance:</b> Help understanding offers, rules, and in-app settings.</li>
-          <li>
-            <b>Codes and programs:</b> Help if you have confusion using an
-            <a href="<?php echo $BASE_URL; ?>/1-lottery-invite-code/">1 Lottery invite code</a>
-            or
-            <a href="<?php echo $BASE_URL; ?>/1-lottery-gift-code/">1 Lottery gift code</a>.
-          </li>
-        </ul>
 
-        <div class="table-responsive">
-          <table class="table table-bordered align-middle">
-            <thead>
-              <tr>
-                <th>Support benefit</th>
-                <th>How it helps you</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Quick issue handling</td>
-                <td>Less waiting and less confusion</td>
-              </tr>
-              <tr>
-                <td>Simple guidance</td>
-                <td>Better understanding of features and steps</td>
-              </tr>
-              <tr>
-                <td>Account safety</td>
-                <td>Protection from misuse and risky actions</td>
-              </tr>
-              <tr>
-                <td>Fair review process</td>
-                <td>Proper handling of complaints and disputes</td>
-              </tr>
-              <tr>
-                <td>Better platform improvement</td>
-                <td>Your feedback helps improve the app</td>
-              </tr>
-            </tbody>
-          </table>
+        
+
+
+          <div class="content-block">
+            <div class="heading-surface h2-surface">
+              <h2>What Is The Need For Customer Support?</h2>
+            </div>
+            <p>The 1 Lottery customer care number support portal is essential for maintaining the reliability of the
+              system. Our support team builds trust with our users by assisting them with their queries on the 1 Lottery
+              colour prediction game. They built a proper bridge between our players and our platform. This relationship
+              is dependent on our reliable, professional and dedicated support team. You may look toward good support
+              for the following factors:</p>
+            <ul>
+              <li><strong>Technical Assistance</strong>: If your game app crashes, face a technical issue, or have an
+                installation or upgrade problem, you need customer support help.</li>
+              <li><strong>Account Security</strong>: To maintain the security of your account, you need the support
+                team’s guidance.</li>
+              <li><strong>Payment Issues</strong>: Sometimes, you may face deposit rejections, issues with <a
+                  href="<?php echo $BASE_URL; ?>/1-lottery-withdraw/">withdrawal</a>, transaction errors, or payment
+                gateway issues; our helpdesk department can assist you in resolving these issues.</li>
+              <li><strong>Feature Access</strong>: You are looking to learn how VIP benefits and new rules work, or what
+                all the updates and notifications mean. Our customer support answers all your queries related to all
+                these matters.</li>
+              <li><strong>Rule Clarification</strong>: You may not fully understand the gaming rules and regulations,
+                bonus and benefit programs, and terms and conditions. They will help you access the <a
+                  href="<?php echo $BASE_URL; ?>/1-lottery-gift-code/">1 Lottery gift code</a> benefits. The support
+                team will help you understand all the rules.</li>
+            </ul>
+          </div>
+
+          <div class="content-block alt">
+            <div class="heading-surface h2-surface">
+              <h2>Support Team’s Benefits</h2>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-bordered align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Benefit</th>
+                    <th>Impact on Your Experience</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Quick Problem Resolution</td>
+                    <td>Less frustration and downtime in gaming</td>
+                  </tr>
+                  <tr>
+                    <td>Expert Guidance</td>
+                    <td>Better understanding of platform features</td>
+                  </tr>
+                  <tr>
+                    <td>Account Safety</td>
+                    <td>Protection from fraud and security issues</td>
+                  </tr>
+                  <tr>
+                    <td>Fair Treatment</td>
+                    <td>Proper handling of disputes and complaints</td>
+                  </tr>
+                  <tr>
+                    <td>Platform Improvement</td>
+                    <td>Your feedback helps make the platform better</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="content-block">
+            <div class="heading-surface h2-surface">
+              <h2>How Can You Contact the 1 Lottery Customer Care?</h2>
+            </div>
+            <p>You can contact our support team either before you log in to your account or after. There are issues you
+              can resolve before logging into the account. And there are issues that are only fixable after the login.
+              Also, if you are not a registered player, you will obviously use the pre-login method.</p>
+
+            <div class="content-block alt">
+              <div class="heading-surface h2-surface">
+                <h3>Method 1: In-App Customer Service Portal (Before Login)</h3>
+              </div>
+
+              <p>To contact our support department without the account login attempt, you can use the following steps:</p>
+
+              <div class="button-group">
+                <a href="https://d1lotteryo.com/#/login" target="_blank" rel="nofollow noopener noreferrer"
+                  class="bttn bttn-login">
+                  Login
+                </a>
+              </div>
+
+
+              <div class="feature-imgs">
+                <img src="<?php echo $BASE_URL; ?>/assets/image/click-customer-service.webp" alt="1 Lottery Login">
+              </div>
+
+              <ol>
+                <li>You will click the above button to open the login screen on your device.</li>
+                <li>There is a “Customer Service” tab under the “Login” option.</li>
+                <li>Clicking on it will open a screen with issue types.</li>
+                <li>Select the issue you are facing and open it.</li>
+                <li>You will be on the official 1 Lottery customer care number Telegram portal.</li>
+                <li>Click the Send Message tab, fill in your information and submit the query.</li>
+              </ol>
+            </div>
+
+            <div class="content-block">
+              <div class="heading-surface h2-surface">
+                <h3>Method 2: In-App Customer Service Portal (After Login)</h3>
+              </div>
+
+              <p>Now, we will discuss how you can contact our support department after the login. You can use the
+                following steps:</p>
+
+              <ol>
+                <li>Log in to your account and click the “Account” section on the navigation bar.</li>
+                <li>After that, scroll down a bit and find the “Customer Service” option. Click on it.</li>
+                <li>Choose the issue you are facing and open it.</li>
+                <li>The official 1 Lottery customer service department number Telegram portal will display for you.</li>
+                <li>Click the Message button, fill in the information and describe your issues.</li>
+                <li>After that, submit the query to our support department to review your problem.</li>
+              </ol>
+            </div>
+
+          </div>
+
+
+          <div class="content-block alt">
+            <div class="heading-surface h2-surface">
+              <h2>What Issues Can The 1 Lottery Customer Support Team Help You With?</h2>
+            </div>
+            <p>You may resolve simple issues. You may need to know how and where to use the <a
+                href="<?php echo $BASE_URL; ?>/1-lottery-invite-code/">1 Lottery invite code</a>. You may need answers
+              to complex issues, such as regulatory concerns or the privacy policy. So, the problems can be of different
+              types. We will discuss the issue types under the following sections, as per complexity.</p>
+
+            <div class="content-block">
+              <div class="heading-surface h3-surface">
+                <h3>Immediate/Instant Resolution Issues (Within Hours)</h3>
+              </div>
+              <p>There are some, in fact, many issues that are fixable within hours. Here is a list of issues that you can
+                get resolved within hours:</p>
+              <ul>
+                <li><strong>Password Resets</strong>: Recover or reset your account passwords.</li>
+                <li><strong>Account Blockage</strong>: You receive their assistance in removing temporary account locks or
+                  restrictions.</li>
+                <li><strong>Login Problems</strong>: The support team will help you fix login errors or missing OTPs.</li>
+                <li><strong>Gift Code Redemption</strong>: They can assist you in resolving issues with promotions or gift
+                  codes.</li>
+                <li><strong>Basic Queries</strong>: You can get answers for simple feature or rule questions.</li>
+              </ul>
+
+              <div class="heading-surface h3-surface">
+                <h3>Standard/Common Resolution Issues (1-3 Days)</h3>
+              </div>
+              <p>By using the 1 Lottery customer care number Telegram portal, you can fix the issues that are a little
+                complex. These are issues that need around 1-3 days to find a resolution. The following is a list of
+                issues you can resolve with the help of the support team:</p>
+              <ul>
+                <li><strong>Payment Issues</strong>: You can reach out to the support team to fix any issues related to <a
+                    href="<?php echo $BASE_URL; ?>/1-lottery-deposit/">deposits</a> into your gaming account or pending
+                  withdrawals from your wallet.</li>
+                <li><strong>Account Verification</strong>: The support team will help you complete your account
+                  verification or ID checks.</li>
+                <li><strong>Withdrawal Delays</strong>: They can help you track and release stuck payments in your game
+                  account/wallet.</li>
+                <li><strong>Game Rules</strong>: If you require clarification on the complex play sessions or payout
+                  details, you can contact our customer care department.</li>
+                <li><strong>Bonus Issues</strong>: You can contact them to fix uncredited bonuses or promotions and game
+                  credit errors.</li>
+              </ul>
+              <div class="heading-surface h3-surface">
+                <h3>Complex/Advanced Level Issues (3-7 Days)</h3>
+              </div>
+              <p>Many issues are highly complex. These types of issues need around 3-7 business days to resolve. These
+                issues require serious investigation, and sometimes support teams need to approach higher-level and
+                regulatory departments. Here is a list of such problems:</p>
+              <ul>
+                <li><strong>Security Checks</strong>: There is an occurrence of security threats, and therefore, you need
+                  the support team's help to investigate the suspicious activity on your <a
+                    href="<?php echo $BASE_URL; ?>/">1 Lottery</a> account.</li>
+                <li><strong>Bug Reports</strong>: You can fix app crashes or technical problems with the help of our
+                  customer care assistance.</li>
+              </ul>
+              <ul>
+                <li><strong>Policy Concerns</strong>: There is an implication on your account due to any violation of
+                  terms, privacy, leading to account restrictions or suspension. The support team is there to help you.
+                </li>
+                <li><strong>Legal Matters</strong>: You may need help regarding compliance, regulatory issues or
+                  verification problems.</li>
+                <li><strong>Disputes</strong>: You want to review play session results or raise any fairness complaints.
+                  You can contact the support team for the same.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="content-block alt">
+            <div class="heading-surface h2-surface">
+              <h2>What Are the Tips to Get a Fast Solution from the 1 Lottery Customer Service?</h2>
+            </div>
+            <p>Before you contact our support team, you will prepare the following information. With this, you can save
+              your own support team’s time. Here are some essential tips to get a fast resolution:</p>
+            <ul>
+              <li>You need to be more specific about the issue when you contact the support department.</li>
+              <li>You will provide your UID, phone number, transaction ID, and details to facilitate quicker and
+                smoother resolution.</li>
+              <li>Depending on the issue types, you will attach screenshots for faster understanding of the root ot
+                cause.</li>
+              <li>It is essential to select the correct issue category to ensure you are directed to the relevant
+                department promptly.</li>
+              <li>Maintain a calm tone and communicate politely and professionally, even in written messages or formats.</li>
+            </ul>
+          </div>
+
+          <div class="content-block alt">
+            <div class="heading-surface h2-surface">
+              <h2>What Are the Things to Remember before Contacting the 1 Lottery Customer Support?</h2>
+            </div>
+            <p>To contact our support team, you will need to adopt the important precautionary measures. Here are
+              important things you will keep in mind:</p>
+            <ul>
+              <li>You should verify the source through which you are trying to contact our support team. You must use
+                the official app or Telegram channel only.</li>
+              <li>You will never share your passwords, OTPs, or bank details with the professional.</li>
+              <li>Please remember not to upload sensitive documents to the website unless specifically requested by our
+                development team.</li>
+              <li>Double-check the internet connection to receive uninterrupted responses.</li>
+              <li>You should stay patient, as some of the complex queries may take more time than other standard issues.
+              </li>
+              <li>If you have a bonus and commission issue or a 1 Lottery Aviator payout billing problem, you need to
+                allow more than 3 days to get it resolved.</li>
+              <li>You should maintain politeness in your communication with our professionals to speed up solutions.
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-block alt">
+            <div class="heading-surface h2-surface">
+              <h2>Conclusion</h2>
+            </div>
+            <p>The support team plays a crucial role in our gaming platform, ensuring user satisfaction and
+              maintaining the brand's reliability and identity. Our support team solves many user issues professionally
+              with dedication. Whether for download, account or gaming quality, our support department is perfect in
+              everything. They provide not only technical assistance but also guidance on tips and suggestions for
+              strategy and prediction, although this is not guaranteed to help you win. Through this post, we have
+              provided information on how to contact our customer care department. Also, we have provided some tips on
+              how to get a fast resolution from the 1 Lottery customer support.</p>
         </div>
-      </div>
-
-      <div class="section inner-section">
-        <h2>How can you contact the 1 Lottery customer care?</h2>
-        <p>
-          You can contact support in two main ways: before login and after login. Many users search for a customer care number,
-          but the fastest option is the in-app Customer Service portal, which opens the official helpdesk chat.
-        </p>
-
-        <h3>Method 1: Contact support before login</h3>
-        <ol>
-          <li>Open the app and go to the <a href="https://d1lotteryo.com/#/login">Login</a> screen.</li>
-          <li>Find the <b>Customer Service</b> option near the bottom.</li>
-          <li>Tap it to open a list of issue categories.</li>
-          <li>Select the issue you are facing.</li>
-          <li>The official helpdesk chat will open. Type your message clearly and send it.</li>
-        </ol>
-
-        <div class="figure-wrap">
-          <img class="article-image" src="<?php echo $BASE_URL; ?>/assets/image/click-customer-service.webp" alt="Click Customer Service on the login screen">
-          <div class="figure-caption">Customer Service option on the Login screen.</div>
-        </div>
-
-        <h3>Method 2: Contact support after login</h3>
-        <ol>
-          <li>Log in to your account.</li>
-          <li>Tap the <b>Account</b> section in the bottom navigation.</li>
-          <li>Tap <b>Customer Service</b>.</li>
-          <li>Select your issue category and open it.</li>
-          <li>Send your message with the correct details.</li>
-        </ol>
-
-        <p>
-          If you are new and not registered yet, complete
-          <a href="https://d1lotteryo.com/register">1 Lottery register</a>
-          and then contact support from inside your account if needed.
-        </p>
-      </div>
-
-      <div class="section inner-section">
-        <h2>Which issues can the customer support team help you with?</h2>
-        <p>
-          Support handles both simple and advanced issues, including password resets, login problems, wallet checks,
-          verification questions, and technical bugs.
-        </p>
-
-        <h3>Issues that are usually resolved quickly (within hours)</h3>
-        <ul>
-          <li><b>Password reset help:</b> Guidance if you forget your password.</li>
-          <li><b>Login issues:</b> Missing OTP, login errors, or repeated failures.</li>
-          <li><b>Temporary restriction review:</b> Steps if your account shows a temporary lock.</li>
-          <li>
-            <b>Gift code help:</b> If your
-            <a href="<?php echo $BASE_URL; ?>/1-lottery-gift-code/">1 Lottery gift code</a>
-            is not applying, support can help check common reasons.
-          </li>
-          <li><b>Basic guidance:</b> Simple questions about how a feature works.</li>
-        </ul>
-
-        <h3>Issues that may take 1 to 3 days</h3>
-        <ul>
-          <li><b>Wallet and payment checks:</b> Deposit pending, failed status, or mismatch details.</li>
-          <li><b>Verification support:</b> Help with account verification and document checks (when required).</li>
-          <li><b>Withdrawal delay tracking:</b> Transaction verification and status checks.</li>
-          <li><b>Offer and bonus correction:</b> If an offer is not reflected properly, support can review it.</li>
-        </ul>
-
-        <h3>Issues that may take 3 to 7 days</h3>
-        <ul>
-          <li><b>Security reviews:</b> Suspicious activity checks and account protection steps.</li>
-          <li><b>Bug investigation:</b> Repeated crashes or technical issues that need deeper review.</li>
-          <li><b>Policy concerns:</b> Account restriction reasons and review requests.</li>
-          <li><b>Dispute review:</b> If you request a session review, it follows a checking process.</li>
-        </ul>
-
-        <p>
-          If you are using features like <a href="<?php echo $BASE_URL; ?>/1-lottery-aviator/">1 Lottery Aviator</a>
-          or reading tips for <a href="<?php echo $BASE_URL; ?>/1-lottery-prediction/">1 Lottery prediction</a>,
-          support can guide you to rules and help pages, but outcomes are never guaranteed.
-        </p>
-      </div>
-
-      <div class="section inner-section">
-        <h2>Tips to get a faster solution</h2>
-        <ul>
-          <li>Explain your issue clearly (what happened, when, and what you tried).</li>
-          <li>Keep your UID, registered phone number, and transaction ID ready (for wallet issues).</li>
-          <li>Attach screenshots if the app shows an error message.</li>
-          <li>Select the correct issue category to reach the right team faster.</li>
-          <li>Use clear, polite messages to avoid delays.</li>
-        </ul>
-
-        <p>
-          If your question is about programs like <a href="<?php echo $BASE_URL; ?>/1-lottery-teacher/">1 Lottery teacher</a>
-          or referral benefits via <a href="<?php echo $BASE_URL; ?>/1-lottery-referral/">1 Lottery referral</a>,
-          mention that clearly so support can guide you to the correct section.
-        </p>
-      </div>
-
-      <div class="section inner-section">
-        <h2>What to remember before contacting support</h2>
-        <ul>
-          <li>Use only the official in-app Customer Service option or the official helpdesk shown there.</li>
-          <li>Never share your password or OTP with anyone.</li>
-          <li>Do not upload sensitive documents unless the official helpdesk asks for them.</li>
-          <li>Check your internet connection so messages send properly.</li>
-          <li>Complex issues can take longer because they may require investigation.</li>
-        </ul>
-      </div>
-
-      <div class="section inner-section">
-        <h2>Conclusion</h2>
-        <p>
-          1 Lottery customer service helps keep the platform smooth, safe, and easy to use. If you face any issue,
-          contact the in-app helpdesk and share the right details to get faster support.
-        </p>
-      </div>
-
+      </div><!-- end content-card -->
     </div>
   </section>
 
-  <section class="faq-section jalwa-section" id="faqs">
+
+  <section class="faq-section" id="faqs">
     <div class="container content-border">
       <div class="row">
         <div class="col-12">
@@ -346,123 +525,112 @@ $BASE_URL = $protocol . '://' . $host . $basePath;
               <h2>Frequently Asked Questions</h2>
             </div>
 
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>Is 1 Lottery customer support available 24/7?</h3>
+                <h3>Is the customer service available 24/7?</h3>
               </div>
               <div class="faq-answer">
-                <p>Yes. Support is available 24/7 through the in-app Customer Service option.</p>
+                <p>It is available 24/7 to resolve your queries and maintain the smooth gaming system.</p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>Can the customer care team help if I forget my password?</h3>
+                <h3>Can the customer care department assist me with my question about the teacher program?</h3>
               </div>
               <div class="faq-answer">
-                <p>Yes. Use the Forgot Password option first, and contact support if you still face trouble.</p>
+                <p>Yes, they can help you with a query on the application for the <a
+                    href="<?php echo $BASE_URL; ?>/teacher-program">1 Lottery teacher</a> program. </p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="arrow"></span>
+                <h3>How can I contact the support department on the 1 Lottery platform?</h3>
+              </div>
+              <div class="faq-answer">
+                <p>You can use the in-app 1 Lottery customer care number Telegram portal to contact them.</p>
+              </div>
+            </div>
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
                 <h3>Can I contact support before logging in?</h3>
               </div>
               <div class="faq-answer">
-                <p>Yes. Use the Customer Service option on the Login screen and send your issue through the helpdesk.</p>
+                <p>Yes, you can! You can open our official website and launch the Customer Service portal available on
+                  the Login screen. From there, you can contact the support team.</p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>What details should I share for faster help?</h3>
+                <h3>What information do I need when contacting support?</h3>
               </div>
               <div class="faq-answer">
-                <p>Share your UID or registered phone number, your issue details, and a transaction ID if the issue is wallet-related.</p>
+                <p>Information such as your UID, registered phone number, transaction details and description of the
+                  issues you are facing needs to be ready with you before contacting them. </p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>What should I do if my withdrawal is delayed?</h3>
+                <h3>Can I report technical issues to the 1 Lottery customer service department?</h3>
               </div>
               <div class="faq-answer">
-                <p>Keep your transaction details ready and contact support from the Customer Service section for a status check.</p>
+                <p>Certainly! You can get issues—app crashes, installation and account-related issues—resolved with the
+                  help of the customer service department.</p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>Is my data safe when I contact customer service?</h3>
+                <h3>Can I get help with forgotten passwords from customer service?</h3>
               </div>
               <div class="faq-answer">
-                <p>Use only official channels and never share your OTP or password with anyone.</p>
+                <p>Yes, they will guide you on how to reset your password; however, it is a self-explanatory process,
+                  meaning you can resolve it by visiting the Login page and clicking the Forgot Password button.</p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>What if my account shows a temporary restriction?</h3>
+                <h3>What happens if my withdrawal is delayed?</h3>
               </div>
               <div class="faq-answer">
-                <p>Contact support with your registered details so the team can guide you through the review steps.</p>
+                <p>You should keep your transaction ID and then contact customer care.</p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>Can support help with gift code issues?</h3>
+                <h3>Is my personal data safe with customer support?</h3>
               </div>
               <div class="faq-answer">
-                <p>Yes. If your gift code is not applying, share the code and a screenshot of the error (if any) in the helpdesk chat.</p>
+                <p>Absolutely! Our support team uses a highly encrypted infrastructure.</p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
+            <div class="faq-item">
               <div class="faq-question">
                 <span class="arrow"></span>
-                <h3>Can support help with invite code or referral confusion?</h3>
+                <h3>What should I do if my account is blocked?</h3>
               </div>
               <div class="faq-answer">
-                <p>Yes. Contact support and share what you see on your screen so the team can guide you correctly.</p>
+                <p>You may submit a request to the 1 Lottery customer support team with your registration information
+                  (like registered phone number) to have your account reviewed and unblocked.</p>
               </div>
             </div>
-
-            <div class="faq-item" onclick="toggleFAQ(this)">
-              <div class="faq-question">
-                <span class="arrow"></span>
-                <h3>Does support provide guaranteed strategy tips?</h3>
-              </div>
-              <div class="faq-answer">
-                <p>Support can guide you to rules and help pages, but outcomes are never guaranteed.</p>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <script>
-    function toggleFAQ(item) {
-      if (!item) return;
-      item.classList.toggle('active');
-    }
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="../js/custom.js"></script>
   <?php include('../footer.php'); ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
+
 </html>

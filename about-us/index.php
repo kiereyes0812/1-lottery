@@ -1,110 +1,122 @@
+<?php
+// Base URL setup (works on localhost subfolder and production root)
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$isLocal = ($host === 'localhost' || $host === '127.0.0.1');
+$basePath = $isLocal ? '/1lotteryyio' : '';
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$BASE_URL = $protocol . '://' . $host . $basePath;
+?>
 <!doctype html>
-<html lang="en-IN">
+<html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us</title>
-  <meta name="description"
-    content="Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience.">
- 
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://1lotteryy.io/about-us/" />
-  <meta property="og:title" content="About Us">
-  <meta property="og:description"
-    content="Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience.">
-  <meta property="og:url" content="https://1lotteryy.io/about-us/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content=" 1 Lottery Login">
-  <meta property="og:image" content="https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp" />
-  <meta property="og:image:alt" content=" 1 Lottery feature image" />
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Us">
-  <meta name="twitter:description"
-    content="Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience.">
-  <meta name="twitter:image" content="https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp" />
-  <meta name="twitter:image:alt" content=" 1 Lottery feature image" />
- <link rel="icon" href="assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="assets/image/1lottery-favicon.webp" />
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <title>About Us</title>
+    <meta name="description" content="Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience." />
+   
+    <link rel="canonical" href="https://1lotteryy.io/about-us/" />
+    <meta name="author" content="1Lottery Team" />
+    <meta name="publisher" content="1 Lottery Game" />
+    <link rel="alternate" hreflang="en-US" href="https://1lotteryy.io/about-us/" />
+    <meta property="og:title" content="About Us" />
+    <meta property="og:description" content="Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience." />
+    <meta property="og:url" content="https://1lotteryy.io/about-us/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="1 Lottery Game" />
+    <meta property="og:image" content="https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp" />
+    <meta property="og:image:alt" content="1 Lottery Login" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Us" />
+    <meta name="twitter:description" content="Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience." />
+    <meta name="twitter:image" content="https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp" />
+    <meta name="twitter:image:alt" content="1 Lottery Login" />
+    <link rel="icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" />
+    <meta name="theme-colour" content="#0d6efd" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Sitemap & Feeds -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://1lotteryy.io/sitemap.xml" />
+    <link rel="alternate" type="application/rss+xml" title="1Lottery RSS Feed" href="https://1lotteryy.io/feed.xml" />
+    <!-- CSS & Libraries -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 
-  <!-- JSON-LD Structured Data for SEO -->
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
     {
-      "@type": "Organization",
-      "@id": "https://1lotteryy.io/#organization",
-      "name": "1 Lottery",
-      "url": "https://1lotteryy.io/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp"
-      },
-      "email": "info@1lotteryy.io",
-      "description": "The 1 Lottery Game is an online gaming platform to play various colour prediction games online and earn exciting rewards.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Support",
-        "email": "info@1lotteryy.io",
-        "availableLanguage": ["English", "Hindi"]
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://1lotteryy.io/#website",
-      "url": "https://1lotteryy.io/",
-      "name": "1 Lottery Login",
-      "description": "Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games & daily bonuses. Sign up now to unlock your rewards.",
-      "publisher": {
-        "@id": "https://1lotteryy.io/#organization"
-      }
-    },
-    {
-      "@type": "AboutPage",
-      "@id": "https://1lotteryy.io/about-us/#aboutpage",
-      "url": "https://1lotteryy.io/about-us/",
-      "name": "About Us",
-      "description": "Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience.",
-      "isPartOf": {
-        "@id": "https://1lotteryy.io/#website"
-      },
-      "publisher": {
-        "@id": "https://1lotteryy.io/#organization"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://1lotteryy.io/about-us/#breadcrumb",
-      "itemListElement": [
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://1lotteryy.io/"
+          "@type": "Organization",
+          "@id": "https://1lotteryy.io/#organization",
+          "name": "1 Lottery Game",
+          "url": "https://1lotteryy.io/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://1lotteryy.io/assets/image/1lottery-logo.webp"
+          },
+          "description": "1 Lottery is an online gaming platform offering color prediction style games and rewards."
         },
         {
-          "@type": "ListItem",
-          "position": 2,
+          "@type": "WebSite",
+          "@id": "https://1lotteryy.io/#website",
+          "url": "https://1lotteryy.io/",
+          "name": "1 Lottery Game",
+          "publisher": {
+            "@id": "https://1lotteryy.io/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://1lotteryy.io/about-us/#webpage",
+          "url": "https://1lotteryy.io/about-us/",
           "name": "About Us",
-          "item": "https://1lotteryy.io/about-us/"
+          "description": "Learn about 1 Lottery Game. Discover our mission, our values, and our commitment to providing a safe, fun, and fair online gaming experience.",
+          "isPartOf": {
+            "@id": "https://1lotteryy.io/#website"
+          },
+          "publisher": {
+            "@id": "https://1lotteryy.io/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://1lotteryy.io/about-us/#breadcrumb"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://1lotteryy.io/about-us/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://1lotteryy.io/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://1lotteryy.io/about-us/"
+            }
+          ]
         }
       ]
     }
-  ]
-}
-</script>
-
+    </script>
 
 </head>
 
@@ -115,15 +127,33 @@
   <section class="about-section">
     <div class="container">
       <div class="h1head">
-        <h1>About Us</h1>
+        
+          <div class="heading-surface h1-surface">
+            <h1>About Us</h1>
+          </div>
+        
       </div>
-      <div class="section inner-section">
-        <p><a href="https://1lotteryy.io/">The 1 Lottery Game</a> is a place made for people who enjoy light, fun, and safe gaming. We started this
+<div class="section inner-section">
+        <p>The<a href="https://1lotteryy.io/"> 1 Lottery Game</a> is a place made for people who enjoy light, fun, and safe gaming. We started this
           platform with
           one simple idea – games should bring joy, not stress. Our focus has always been on giving players a
           fair,
           simple, and secure experience.</p>
       </div>
+
+        <nav class="content-block toc-card" data-toc-static aria-label="Table of contents">
+          <button class="toc-toggle" type="button" aria-expanded="false">
+            <span class="toc-arrow" aria-hidden="true">▾</span>
+            <span class="toc-title">Table of Contents</span>
+          </button>
+
+          <div class="toc-panel" hidden>
+            <ol class="toc-list" data-toc></ol>
+          </div>
+        </nav>
+
+      
+
 
       <div class="section inner-section">
         <h2>Our Mission</h2>
@@ -209,7 +239,6 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="../js/custom.js"></script>
   <?php include('../footer.php') ?>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

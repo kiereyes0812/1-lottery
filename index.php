@@ -1,5 +1,13 @@
+<?php
+// Base URL setup (works on localhost subfolder and production root)
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$isLocal = ($host === 'localhost' || $host === '127.0.0.1');
+$basePath = $isLocal ? '/1lotteryyio' : '';
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$BASE_URL = $protocol . '://' . $host . $basePath;
+?>
 <!doctype html>
-<html lang="en-IN">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,30 +15,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <title>1 Lottery Login</title>
-    <meta name="description"
-        content="Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games & daily bonuses. Sign up now to unlock your rewards." />
+    <meta name="description" content="Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games &amp; daily bonuses. Sign up now to unlock your rewards." />
    
     <link rel="canonical" href="https://1lotteryy.io/" />
     <meta name="author" content="1Lottery Team" />
-    <meta name="publisher" content="1Lottery" />
-    <link rel="alternate" hreflang="en" href="https://1lotteryy.io/" />
+    <meta name="publisher" content="1 Lottery Game" />
+    <link rel="alternate" hreflang="en-US" href="https://1lotteryy.io/" />
     <meta property="og:title" content="1 Lottery Login" />
-    <meta property="og:description"
-        content="Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games & daily bonuses. Sign up now to unlock your rewards." />
+    <meta property="og:description" content="Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games &amp; daily bonuses. Sign up now to unlock your rewards." />
     <meta property="og:url" content="https://1lotteryy.io/" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="1 Lottery" />
+    <meta property="og:site_name" content="1 Lottery Game" />
     <meta property="og:image" content="https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp" />
-    <meta property="og:image:alt" content="1 Lottery feature image" />
+    <meta property="og:image:alt" content="1 Lottery Login" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="1 Lottery Login" />
-    <meta name="twitter:description"
-        content="Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games & daily bonuses. Sign up now to unlock your rewards." />
+    <meta name="twitter:description" content="Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games &amp; daily bonuses. Sign up now to unlock your rewards." />
     <meta name="twitter:image" content="https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp" />
-    <meta name="twitter:image:alt" content="1 Lottery feature image" />
-    <link rel="icon" href="assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="assets/image/1lottery-favicon.webp" />
+    <meta name="twitter:image:alt" content="1 Lottery Login" />
+    <link rel="icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" sizes="32x32" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="<?php echo $BASE_URL; ?>/assets/image/1lottery-favicon.webp" />
     <meta name="theme-colour" content="#0d6efd" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Sitemap & Feeds -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://1lotteryy.io/sitemap.xml" />
@@ -43,154 +49,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <link rel="preload" as="image" href="https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp">
 
-    <!-- Schema.org JSON-LD Structured Data (All Mix) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "HomePage",
-      "@id": "https://1lotteryy.io/#homepage",
-      "url": "https://1lotteryy.io/",
-      "name": "1 Lottery Login",
-      "description": "Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games & daily bonuses. Sign up now to unlock your rewards.",
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp",
-        "width": 1200,
-        "height": 628
-      },
-      "inLanguage": "en-IN",
-      "about": "1 Lottery, Online Game Platform, Colour Prediction Game"
-    },
-    {
-      "@type": "MobileApplication",
-      "@id": "https://1lotteryy.io/#mobileapp",
-      "name": "1 Lottery App",
-      "operatingSystem": "Android",
-      "applicationCategory": "GameApplication",
-      "downloadUrl": "https://1lotteryy.io/apk/",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "ratingCount": "1532"
-      }
-    },
-    {
-      "@type": "WebApplication",
-      "@id": "https://1lotteryy.io/#webapp",
-      "name": "1 Lottery Online Login",
-      "url": "https://1lotteryy.io/",
-      "applicationCategory": "GameApplication",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "ratingCount": "1532"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://1lotteryy.io/#howto-login",
-      "name": "1 Lottery Login Guide",
-      "description": "Step-by-step guide to safely log in to 1 Lottery on mobile or browser. Follow these instructions to access your account and start playing.",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://1lotteryy.io/assets/image/1-Lottery-feature-images.webp",
-        "width": 1200,
-        "height": 628
-      },
-      "totalTime": "PT2M",
-      "step": [
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
         {
-          "@type": "HowToStep",
-          "position": 1,
-          "name": "Visit the Website",
-          "itemListElement": [
+        "@context": "https://schema.org",
+        "@graph": [
             {
-              "@type": "HowToDirection",
-              "text": "Go to the website: https://1lotteryy.io/"
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "name": "Click Login",
-          "itemListElement": [
+            "@type": "Organization",
+            "@id": "https://1lotteryy.io/#organization",
+            "name": "1 Lottery Game",
+            "url": "https://1lotteryy.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://1lotteryy.io/assets/image/1lottery-logo.webp"
+            },
+            "description": "1 Lottery is an online gaming platform offering color prediction style games and rewards.",
+            "inLanguage": "en-US"
+            },
             {
-              "@type": "HowToDirection",
-              "text": "Click on the Login button given on the homepage."
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 3,
-          "name": "Enter your mobile number",
-          "itemListElement": [
+            "@type": "WebSite",
+            "@id": "https://1lotteryy.io/#website",
+            "url": "https://1lotteryy.io/",
+            "name": "1 Lottery Game",
+            "publisher": {
+                "@id": "https://1lotteryy.io/#organization"
+            },
+            "inLanguage": "en-US"
+            },
             {
-              "@type": "HowToDirection",
-              "text": "Enter your registered mobile number."
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 4,
-          "name": "Enter Password",
-          "itemListElement": [
+            "@type": "WebPage",
+            "@id": "https://1lotteryy.io/#webpage",
+            "url": "https://1lotteryy.io/",
+            "name": "1 Lottery Login",
+            "description": "Play thrilling games at 1 Lottery. Check out our easy login and registration, as well as exciting games & daily bonuses. Sign up now to unlock your rewards.",
+            "isPartOf": {
+                "@id": "https://1lotteryy.io/#website"
+            },
+            "publisher": {
+                "@id": "https://1lotteryy.io/#organization"
+            },
+            "breadcrumb": {
+                "@id": "https://1lotteryy.io/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+            },
             {
-              "@type": "HowToDirection",
-              "text": "Enter the password you created during registration."
+            "@type": "BreadcrumbList",
+            "@id": "https://1lotteryy.io/#breadcrumb",
+            "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://1lotteryy.io/"
+                },
+                {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "1 Lottery Login",
+                "item": "https://1lotteryy.io/"
+                }
+            ]
             }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 5,
-          "name": "Click Login button to Enter",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "Click on the 'Login' button to enter the game."
-            }
-          ]
+        ]
         }
-      ],
-      "tool": [
-        {
-          "@type": "HowToTool",
-          "name": "Web Browser or 1 Lottery App"
-        }
-      ],
-      "supply": [
-        {
-          "@type": "HowToSupply",
-          "name": "1 Lottery account"
-        }
-      ]
-    }
-  ]
-}
-</script>
+        </script>
 
 </head>
 
@@ -202,8 +130,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="h1head">
-                        <h1>1 Lottery Login</h1>
+                        <div class="heading-surface h1-surface">
+                            <h1>1 Lottery Login</h1>
+                        </div>
                     </div>
+
                     <p>1 Lottery Game is a mobile gaming app where you get to play simple games, join multiple events,
                         and get rewards directly in your game wallet. It is small in size, very easy to use, and most
                         importantly, safe for players who love online gaming that rewards them with real prizes.
@@ -229,19 +160,32 @@
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
-                </div>
+</div>
             </div>
         </div>
     </section>
+
+    
 
     <section class="top-section all-lottery center">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="h2head">
+                                        <nav class="content-block toc-card" data-toc-static aria-label="Table of contents">
+          <button class="toc-toggle" type="button" aria-expanded="false">
+            <span class="toc-arrow" aria-hidden="true">▾</span>
+            <span class="toc-title">Table of Contents</span>
+          </button>
+
+          <div class="toc-panel" hidden>
+            <ol class="toc-list" data-toc></ol>
+          </div>
+        </nav>
+                
+<div class="h2head">
                         <h2>1 Lottery Game Gift Code (Updated Regularly)</h2>
                     </div>
-                    <p>1 Lottery Game gift code is a special code that gives you free rewards like game credits, bonus
+                    <p class="step-text">1 Lottery Game gift code is a special code that gives you free rewards like game credits, bonus
                         points, and other benefits to elevate your gaming experience.</p>
                     <div class="gift-code-box">
                         <span class="gift-label">🎁 Gift Code:</span>
@@ -301,14 +245,14 @@
                         <div class="swiper-wrapper">
                             <!-- Card 1 -->
                             <div class="swiper-slide">
-                                <img src="assets/image/5d.webp" class="5d" alt="5D game" />
+                                <img src="assets/image/5d.webp" class="5d" alt="1 Lottery Login" />
                                 <strong class="card-title">5D Game</strong>
                                 <p class="card-text">Colour Prediction Game</p>
                             </div>
 
                             <!-- Card 2 -->
                             <div class="swiper-slide">
-                                <img src="assets//image/trxwingo.webp" class="Trx Wingo" alt="Trx Wingo" />
+                                <img src="assets//image/trxwingo.webp" class="Trx Wingo" alt="1 Lottery Login" />
                                 <strong class="card-title">TRX Wingo Game</strong>
                                 <p class="card-text">Colour Prediction Game</p>
 
@@ -316,7 +260,7 @@
 
                             <!-- Card 3 -->
                             <div class="swiper-slide">
-                                <img src="assets/image/moter-racing.webp" class="Moto Racing" alt="Moto Racing" />
+                                <img src="assets/image/moter-racing.webp" class="Moto Racing" alt="1 Lottery Login" />
                                 <strong class="card-title">Moto Racing Game</strong>
                                 <p class="card-text">Colour Prediction Game</p>
 
@@ -324,7 +268,7 @@
 
                             <!-- Card 4 -->
                             <div class="swiper-slide">
-                                <img src="assets/image/k3.webp" class="k3" alt="K3" />
+                                <img src="assets/image/k3.webp" class="k3" alt="1 Lottery Login" />
                                 <strong class="card-title">K3 Game</strong>
                                 <p class="card-text">Colour Prediction Game</p>
 
@@ -332,7 +276,7 @@
 
                             <!-- Card 5 -->
                             <div class="swiper-slide">
-                                <img src="assets/image/wingogame.webp" class="Wingo Game" alt="Wingo Game" />
+                                <img src="assets/image/wingogame.webp" class="Wingo Game" alt="1 Lottery Login" />
                                 <strong class="card-title">Wingo Game</strong>
                                 <p class="card-text">Colour Prediction Game</p>
 
@@ -355,7 +299,7 @@
                     <div class="h2head">
                         <h2>What is 1 Lottery Game?</h2>
                     </div>
-                    <p class="white">1 Lottery is an online gaming platform that offers you to play games that are lottery-based
+                    <p class="white"><a href="https://1lotteryy.io/" target="_blank" rel="nofollow noreferrer noopener">1 Lottery</a> is an online gaming platform that offers you to play games that are lottery-based
                         and
                         participate in multiple ongoing events for more rewards and fun. The app’s interface is easy,
                         which helps even beginners to explore the game through their basic smartphones. </p>
@@ -373,9 +317,8 @@
         <div class="container table-container">
             <div class="row">
                 <div class="col-12">
-                    <div class="h2head">
-                        <h3> App Specifications</h3>
-                    </div>
+                        <p class="step-card"><strong>App Specifications</strong></p>
+                    
                     <table class="spec-table">
                         <thead>
                             <tr>
@@ -479,7 +422,7 @@
                             </li>
                             <li>
                                 <div class="step-number">5</div>
-                                <div class="step-text">With all of that, you get 1 Lottery customer support for quick
+                                <div class="step-text">With all of that, you get <a href="<?php echo $BASE_URL; ?>/1-lottery-customer-support">1 Lottery customer</a> support for quick
                                     assistance whenever you are stuck or face problems related to the platform.</div>
                             </li>
 
@@ -577,7 +520,7 @@
                     </div>
                 </div>
                 <p class="white">
-                    🎉 1 Lottery app has a variety of games to suit diverse players’ interests. Each game is easy to
+                    1 Lottery app has a variety of games to suit diverse players’ interests. Each game is easy to
                     understand and play, perfect for beginners and experienced players.
                 </p>
             </div>
@@ -594,7 +537,7 @@
 
                     <p class="white">
                         1Lottery Game offers many regular events and rewards to give players extra benefits while
-                        playing and not. These rewards have unique rules and purpose inside the app only. Here are some
+                        playing or not. These rewards have unique rules and purpose inside the app only. Here are some
                         main events and bonuses you can find:
                     </p>
                     <!-- Event 1 -->
@@ -674,7 +617,7 @@
                     </div>
 
                     <p class="events-summary">
-                        🎉 All the events and rewards  are updated regularly, giving players more
+                        All the events and rewards  are updated regularly, giving players more
                         chances to earn while
                         they play. You can check these events either through the banners on the homescreen, on top, or
                         in the “Activity”
@@ -693,7 +636,7 @@
                         <h2>Getting Started with the Game</h2>
                     </div>
                     <div class="img-box">
-                        <img src="assets/image/1 Lottery Game.webp" alt="1 Lottery App">
+                        <img src="assets/image/1 Lottery Game.webp" alt="1 Lottery Login">
                     </div>
                     <br>
                     <p class="white">It is very simple and quick to get started with  Lottery 1 Game. To start, you will
@@ -762,7 +705,7 @@
                         <div class="step-card"><strong>Step 4:</strong> And then, follow all the steps on your screen to
                             install the
                             game.</div>
-                        <div class="step-card"><strong>Step 5:</strong> After this, you will see 1 Lottery App on your
+                        <div class="step-card"><strong>Step 5:</strong> After this, you will see <a href="<?php echo $BASE_URL; ?>/apk/">1 Lottery App</a> on your
                             device’s
                             homescreen.</div>
                     </div>
@@ -799,44 +742,44 @@
                     </div>
                     <p><strong>Step 1:</strong> Open the 1 Lottery game register page by clicking on the button above.</p>
                     <div class="img-box">
-                        <img src="assets/image/1 Lottery Game.webp" alt="1 Lottery App">
+                        <img src="assets/image/1 Lottery Game.webp" alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 2:</strong> You’ll be on the register page. Here, firstly, come to the “Register
                         Your
                         Phone” by simply clicking on it.</p>
                     <div class="img-box">
                         <img src="assets/image/Click the registration button.webp"
-                            alt="Tap the registration button in the 1 Lottery App ">
+                            alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 3:</strong> Enter your phone number in the space for it.</p>
                    
                     <br>
                     <div class="img-box">
                         <img src="assets/image/1 Lottery Phone Number login.webp"
-                            alt="Enter your phone number in the column provided on the 1 Lottery App">
+                            alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 4:</strong> Then, set a password that has both letters and numbers.</p>
                     <div class="img-box">
-                        <img src="assets/image/Enter Password.webp" alt="Add a password">
+                        <img src="assets/image/Enter Password.webp" alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 5:</strong> Enter that password again to confirm it.</p>
                     <div class="img-box">
                         <img src="assets/image/Enter the password again.webp"
-                            alt="Add a password again for confirmation">
+                            alt="1 Lottery Login">
                     </div>
-                    <p><strong>Step 6:</strong> Type or paste the invite code (it is mandatory to enter the platform).
+                    <p><strong>Step 6:</strong> Type or paste the <a href="<?php echo $BASE_URL; ?>/1-lottery-invite-code/"">invite code</a> (it is mandatory to enter the platform).
                     </p>
                     <div class="img-box">
-                        <img src="assets/image/Invite Code.webp" alt="Add a 1 Lottey Invite Code ">
+                        <img src="assets/image/Invite Code.webp" alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 7:</strong> Tick the box “I have read and agree” to accept the privacy agreement.
                     </p>
                     <div class="img-box">
-                        <img src="assets/image/Tick the confirm.webp" alt="Tick the box “I have read and agree”">
+                        <img src="assets/image/Tick the confirm.webp" alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 8:</strong> Tap on “Register” and you’ll be in the game in no time.</p>
                     <div class="img-box">
-                        <img src="assets/image/Hit the registration button for Email Registration.webp" alt="Tap on “Register”">
+                        <img src="assets/image/Hit the registration button for Email Registration.webp" alt="1 Lottery Login">
                     </div>
 
                 </div>
@@ -853,41 +796,41 @@
                     <p><strong>Step 2:</strong> On the register page, click on “Email Registration” to register with
                         your email.</p>
                     <div class="img-box">
-                        <img src="assets/image/Email Registration.webp" alt="1 Lottery Email Registration">
+                        <img src="assets/image/Email Registration.webp" alt="1 Lottery Login">
                     </div>
 
                     <p><strong>Step 3:</strong> Type your email ID in the space given.</p>
                     <div class="img-box">
-                        <img src="assets/image/Email.webp" alt="Add your mail id ">
+                        <img src="assets/image/Email.webp" alt="1 Lottery Login">
                     </div>
 
                     <p><strong>Step 4:</strong> Type a password with letters and numbers.</p>
                     <div class="img-box">
                         <img src="assets/image/1 Lottery - Add Password.webp"
-                            alt="Type a password with letters and numbers">
+                            alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 5:</strong> Type the password again.</p>
                     <div class="img-box">
                         <img src="assets/image/Confirm Password for Email Registration.webp"
-                            alt="Type the password again">
+                            alt="1 Lottery Login">
                     </div>
 
                     <p><strong>Step 6:</strong> Then, enter the invite code that you got from your friend. It is a must
                         to enter the code.
                     </p>
                     <div class="img-box">
-                        <img src="assets/image/Invite Code for Email Confirmation.webp" alt="Enter the invite code">
+                        <img src="assets/image/Invite Code for Email Confirmation.webp" alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 7:</strong> Tick the “I have read and agree” box.
                     </p>
                     <div class="img-box">
                         <img src="assets/image/Tick the box for Email Registration.webp"
-                            alt="Tick the “I have read and agree” box.">
+                            alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 8:</strong> Hit the “Register” button.</p>
                     <div class="img-box">
                         <img src="assets/image/Hit the registration button for Email Registration.webp"
-                            alt="Hit the “Register” button.">
+                            alt="1 Lottery Login">
                     </div>
                 </div>
             </div>
@@ -933,28 +876,28 @@
                     </div>
                     <p><strong>Step 1:</strong>  Click on the Login button given above </p>
                     <div class="img-box">
-                        <img src="assets/image/1 lottery Website.webp" alt="1 Lottery Game">
+                        <img src="assets/image/1 lottery Website.webp" alt="1 Lottery Login">
                     </div>
 
                     <p><strong>Step 2:</strong>  The login page of the game will open.</p>
                     <div class="img-box">
-                        <img src="assets/image/1 Lottery Login Page.webp" alt="Go to the login page on the website">
+                        <img src="assets/image/1 Lottery Login Page.webp" alt="1 Lottery Login">
                     </div>
 
                     <p><strong>Step 3:</strong> Here, choose the method you used to register: through mobile number or
                         email ID.</p>
                     <div class="img-box">
-                        <img src="assets/image/Choose the Login Method.webp" alt="Select your preferred login method">
+                        <img src="assets/image/Choose the Login Method.webp" alt="1 Lottery Login">
                     </div>
 
                     <p><strong>Step 4:</strong> Type in your phone number/email ID.</p>
                     <div class="img-box">
                         <img src="assets/image/Add Phone Number for the Login Process.webp"
-                            alt="Type in your phone number/email ID">
+                            alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 5:</strong> Enter your password.</p>
                     <div class="img-box">
-                        <img src="assets/image/Add password for the login process.webp" alt="Enter your password.">
+                        <img src="assets/image/Add password for the login process.webp" alt="1 Lottery Login">
                     </div>
 
 
@@ -963,13 +906,13 @@
                     </p>
                     <div class="img-box">
                         <img src="assets/image/Tick on remember Password.webp"
-                            alt="Tick “Remember Password” to save your login">
+                            alt="1 Lottery Login">
                     </div>
                     <p><strong>Step 7:</strong> Hit the button “Log in” to enter the platform.
                     </p>
                     <div class="img-box">
                         <img src="assets/image/Hit the Login Button for Login process.webp"
-                            alt="Hit the button “Log in” to enter the platform.">
+                            alt="1 Lottery Login">
                     </div>
 
                 </div>
@@ -1026,7 +969,7 @@
 
             <!-- Title -->
               <div class="h2head">
-            <h2 >How to Deposit</h2>
+            <h2 >How to Deposit Money in your Wallet?</h2>
             </div>
             <p class="white">
                 It is a simple, quick, and flexible process to add money to your 1 Lottery account.
@@ -1177,10 +1120,10 @@
     <section class="withdraw-section all-lottery">
         <div class="container lottery-bg-clr">
              <div class="h2head">
-            <h2>How to Withdraw</h2>
+            <h2>How to Withdraw Money from your Wallet?</h2>
             </div>
             <p class="white
-            ">Just like how simple making a deposit is, withdrawal is easy too. 1 Lottery has multiple safe and quick
+            ">Just like how simple <a href="<?php echo $BASE_URL; ?>/1-lottery-deposit/">making a deposit</a> is, withdrawal is easy too. 1 Lottery has multiple safe and quick
                 withdrawal methods, which you can use to withdraw your money.</p>
             <p class="white">But before we do it, follow these common steps:</p>
             <h3>Common Steps Before Withdrawal</h3>
@@ -1265,7 +1208,7 @@
             <div class="step-card"><strong>Step 6:</strong> Then, click on “Withdraw.”</div>
             <p class="white">You can withdraw once per day, with a fee deducted according to your VIP level and the free
                 withdrawals
-                you can make. Also, after the withdrawal, you will have to confirm the blockchain main network 3 times
+                you can make. Also, after the <a href="<?php echo $BASE_URL; ?>/1-lottery-withdraw/">withdrawal</a>, you will have to confirm the blockchain main network 3 times
                 before it can arrive at your account.</p>
         </div>
     </section>
@@ -1429,7 +1372,7 @@
             </div>
 
             <div class="white">
-                If you’re facing trouble , you do not need to worry, because help is near! The 1
+                If you’re facing trouble, you do not need to worry, because help is near! The 1
                 Lottery customer support is 24/7 available to help you with any kind of issue you face.
             </div>
 
@@ -1437,7 +1380,7 @@
             <div class="section">
                 <h3>Method 1: Before Registration/Login</h3>
 
-                <div class="step-card"><b>Step 1:</b> Open the 1 Lottery Game login page 
+                <div class="step-card"><b>Step 1:</b> Open the 1 Lottery Game login page. 
                 </div>
                 <div class="step-card"><b>Step 2:</b> If you face any problem when registering or logging in, you can
                     scroll to the bottom of the page and click on the “Customer Service” button.</div>
@@ -1629,7 +1572,6 @@
     
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/custom.js"></script>
     <?php include('footer.php') ?>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

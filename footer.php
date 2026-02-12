@@ -37,7 +37,7 @@ if (!isset($BASE_URL)) {
         <div class="row">
             <div class="col-12">
                 <div class="footer-bottom">
-                    <p class="copy-right">© 2025, <a href="<?php echo $BASE_URL; ?>/">1 Lottery </a>
+                    <p class="copy-right">© 2026, <a href="<?php echo $BASE_URL; ?>/">1 Lottery Game </a>
                         All
                         rights
                         reserved.</p>
@@ -46,3 +46,7 @@ if (!isset($BASE_URL)) {
         </div>
     </div>
 </footer>
+
+<!-- Site JS (menu, sticky header, FAQ) -->
+<script src="<?php echo $BASE_URL; ?>/js/custom.js"></script>
+<script src="<?php echo $BASE_URL; ?>/js/toc.js"></script>
